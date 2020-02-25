@@ -1,2 +1,0 @@
-# ProgateWOL
-Web Development excercise 
