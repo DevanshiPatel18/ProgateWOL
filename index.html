@@ -1,46 +1,375 @@
-    <!DOCTYPE html>
-    <html lang="en" dir="ltr">
-      <head>
-        <meta charset="utf-8">
-        <title>Calculator</title>
-        <link rel="stylesheet" href="stylesheet.css">
-      </head>
-      <body>
-        <div class="calculator">
-            <input type="text" class="calculator-screen" value="0" disabled>
-            <div class="calculator-keys">
-              <div class="row">
-                <button class="all-clear">AC</button>
-                <button class="percentage">%</button>
-                <button class="operator" value="/">&divide;</button>
-              </div>
-              <div class="row">
-                <button class="number" value="7">7</button>
-                <button class="number" value="8">8</button>
-                <button class="number" value="9">9</button>
-                <button class="operator" value="*">&times;</button>
-              </div>
-              <div class="row">
-                <button class="number" value="4">4</button>
-                <button class="number" value="5">5</button>
-                <button class="number" value="6">6</button>
-                <button class="operator" value="-">-</button>
-              </div>
-              <div class="row">
-                <button class="number" value="1">1</button>
-                <button class="number" value="2">2</button>
-                <button class="number" value="3">3</button>
-                <button class="operator" value="+">+</button>
-              </div>
-              <div class="row">
-                <button class="number zero-btn" vaue="0">0</button>
-                <button class="decimal" value=".">.</button>
-                <button class="equal-sign" value="=">=</button>
-              </div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Java CheatSheet</title>
+    <link rel="stylesheet" href="styelsheet.css">
+  </head>
+  <body>
 
+    <header>
+      <div class="container">
+        <div class="top">
+     <h3>Java Cheat Sheet</h3>
+     <input class="search-bar" id="searchbar" onkeyup="search_element()" type="text"
+     name="search" placeholder="Search .." >
+     </div>
+    <ul type="none">
+      <li>About Java</li>
+      <li>Learn</li>
+      <li>Download Cheat-Sheet</li>
+    </ul>
+    </div>
+      </header
+
+<br><br>
+   <div class="contents">
+      <ol id='list'>
+       <li class="lists">
+       <div class="title" class="primitive-datatype">
+       <h3><u> Primitive data type</u></h3>
+       <div class="information">
+         <p>Primitive data types in java are <br>those data types which <br> are inbulit in the program and we can <br> derive other data types from it.<br>The various types osf datatypes are <br> given here. </p>
+       </div>
+          <table class="data-table" style="width:50%">
+            <tr class="table-head">
+              <th>Data Type</th>
+              <th>Size</th>
+              <th>Range</th>
+            </tr>
+            <tr>
+              <th>byte</th>
+                <th>8</th>
+                <th>-128 to 127</th>
+             </tr>
+
+             <tr>
+               <th>short</th>
+               <th>16</th>
+               <th>-32768 to 32767</th>
+            </tr>
+
+            <tr>
+              <th>int</th>
+              <th>32</th>
+              <th>-2147483648 to 2147483647</th>
+            </tr>
+
+            <tr>
+              <th>long</th>
+              <th>64</th>
+              <th>-9223372036854775808 to 9223372036854775807</th>
+            </tr>
+
+            <tr>
+              <th>float</th>
+              <th>32</th>
+              <th>3.4e-0.38 to 3.4e+0.38</th>
+            </tr>
+
+            <tr>
+              <th>double</th>
+              <th>64</th>
+              <th>1.7e-308 to 1.7e+308</th>
+            </tr>
+
+            <tr>
+                <th>char</th>
+                <th>16</th>
+                <th> complete unicode character set</th>
+            </tr>
+
+            <tr>
+              <th>Boolean</th>
+              <th> 1</th>
+              <th>True,False</th>
+            </tr>
+
+            </table>
             </div>
+            </li>
+<br><br>
+<li class="lists">
+      <div class="title" class="operator">
+      <h3><u> Java Operators</u></h3>
+       <p> There are mainly 8 different types of operators in Java:</p>
+       <div class="information">Operators in Java are used to <br> check contions are see the queries are <br>true or false and also used to <br>improve functionality of code.</div>
+         <table class="data-table">
+           <tr class="table-head">
+             <th> Operator Type</th>
+             <th>Operators</th>
+            </tr>
+
+            <tr>
+           <th>Arithmatic</th>
+           <th>+,-,*,?,% </th>
+           </tr>
+
+           <tr>
+             <th>Assignment</th>
+             <th>=,+=,-=,*=,/=,%=,&=,^=,|=,<<=,>>=,>>>=</th>
+           </tr>
+
+           <tr>
+             <th>Bitwise</th>
+             <th>^,&,|</th>
+           </tr>
+           <tr>
+             <th>Logical</th>
+             <th>&&,||</th>
+           </tr>
+           <tr>
+            <th>Relational</th>
+            <th><,>,<=,>=,==,!=</th>
+           </tr>
+           <tr>
+
+             <th>Shift</th>
+             <th><<,>>,>>> </th>
+           </tr>
+
+           <tr>
+             <th>Ternary</th>
+             <th>?:</th>
+           </tr>
+
+           <tr>
+             <th>Unary</th>
+             <th>++x,-x,x++,x-,+x,-x,!</th>
+           </tr>
+           </table>
+           </div>
+           </li>
+
+           <br><br>
+     <li class="lists">
+      <div class="title" class="Java-IDE">
+      <h3><u>Java IDE and Executing Code</u></h3>
+       <p>Among many IDEs the most recommended ones are:
+         <ul>
+           <li>Eclipse</li>
+           <li>Netbeans</li>
+           </ul>
+          <p>Java code can be wriiten in any text editor and compiled and run on the terminal with following commands</p>
+          <p>$ javac [file_name].java</p>
+          <p>$java [file_name]</p>
+          <p><u><strong>Note:</strong></u>Filename should be same as the class name containing the main() method,with a .jav extention</p>
+          </div>
+        </li>
+
+<br><br>
+        <li class="lists">
+       <div class="title" class="variables-in-java">
+        <h3><u>Variables in Java</u></h3>
+        <div class="information">
+          Variables in Java are used to manipulate the <br>values that are implicitly <br> or explicitly given <br> by the user or the system.
         </div>
-        <script type="text/javascript" src="script.js">
-        </script>
-      </body>
-    </html>
+        <table class="data-table">
+          <tr class="table-head">
+            <th> Local Variable</th>
+            <th> Global or Instance Variable</th>
+            <th>Static Variables</th>
+           </tr>
+
+           <tr>
+          <th>Declared and initialized inside the body of the method, block or constuctor.</th>
+          <th>Declared inside the class but outside of the method,block or constructor.If not initialised,the default value is 0.</th>
+          <th>Declared using a "static" keyword.It cannot be local.</th>
+          </tr>
+
+          <tr>
+            <th>It has acess only within the method in which it is declared and is destroyed later from the block or when the funtion call is returned.</th>
+            <th>Variables are created when an instance if the class is created and destroyed when it is destroyed.</th>
+            <th>Variables created creates a singlr copy in the memory which is shared among a;; objects at a class.</th>
+          </tr>
+          </table>
+        </div>
+        </li>
+
+        <br><br>
+        <li class="lists">
+        <div class="title" class="reserved-words">
+         <h3><u>Reserved words in Java</u></h3>
+         <p>Also known as <u>keywords</u>, are particular words which are predefined in Java and cannot be <br>used as variable or object name.Some of the importtant keywords are:</p>
+          <div class="information">These are the list of keywords which <br>cannot be used as variable names as  <br>they serve different meaning and <br> functionality and the execution of Java code.</div>
+         <table class="data-table">
+           <br>
+           <tr class="table-head">
+             <th>Keywords</th>
+             <th>Usage</th>
+           </tr>
+           <tr>
+             <th>abstract</th>
+             <th>used to declare an abstract class.</th>
+           </tr>
+           <tr>
+             <th>catch</th>
+             <th>used to catch exceptions generated by try statements.</th>
+           </tr>
+           <tr>
+             <th>class</th>
+             <th>used to declare a class.</th>
+           </tr>
+           <tr>
+             <th>enum</th>
+             <th>defines a set of comatants.</th>
+           </tr>
+           <tr>
+             <th>extends</th>
+             <th>indicates the class is inherited.</th>
+           </tr>
+           <tr>
+             <th>final</th>
+             <th>inidcates the value cannot be changed.</th>
+           </tr>
+           <tr>
+             <th>finally</th>
+             <th>used to execute code after the try-catch structure.</th>
+           </tr>
+           <tr>
+             <th>implements</th>
+             <th>used to implement an interface.</th>
+           </tr>
+           <tr>
+             <th>new</th>
+             <th>used to create new objects.</th>
+           </tr>
+           <tr>
+             <th>static</th>
+             <th>used to indicate that a variable or a method is a class method.</th>
+           </tr>
+           <tr>
+             <th>super</th>
+             <th>used to refer to the parent class.</th>
+           </tr>
+           <tr>
+             <th>this</th>
+             <th>used to refer to he current object in a method or constructor.</th>
+           </tr>
+           <tr>
+             <th>throw</th>
+             <th>used to explicitly throw an exception.</th>
+           </tr>
+           <tr>
+             <th>throws</th>
+             <th>used to declare an exception.</th>
+           </tr>
+           <tr>
+             <th>try</th>
+             <th>block of code to handle an exception</th>
+           </tr>
+           </table>
+           </div>
+           </li>
+
+           <br><br>
+        <li class="lists">
+       <div class="title" class="methods-in-java">
+         <h3><u>Methods in Java</u></h3>
+         <div class="information">Methods in Java are used to build those <br>functions which are user defined <br> i.e they serve the funtionality <br> what the user wamts it to have.</div>
+        <p>The general form of method: <br><br>Where type- return type of method. <br>name-name of the mathod <br>parameter list-sequence of type and variables <br> seperated by a comma return-statement to <br>eturn value to calling routine <br>
+        </p>
+        <br>
+        <p><strong>Format:</strong></p>
+        <br>
+        <p>type name(parameter list)<br>
+        {<br>
+        //body of the method <br>
+        //return value(only id type is not void)<br>
+        <br>}
+      </p>
+        </div>
+        </li>
+
+        <br><br>
+        <li class="lists">
+      <div class="title" class="conditional-statemnts-in-java">
+      <h3><u>Conditional Statements in Java</u></h3>
+      <div class="information">Condtional statemnets are used to check <br>some contraints that help the user to <br>get btter results based on the bifercation.</div>
+       <ul>
+         <li>if-else
+           <p>Tests condition,if true condition block is excuted otherwise else block is executed</p>
+           <p>Example</p>
+           <a href="if.png"><img src="if.png"></a>
+           <br><br>
+           
+           </li>
+         <li>Switch
+           <p>Test the condition, if a particular case is true the control is passed to the block ans executed.The rest of the cases are not considered further and the program braks out of the loop.</p>
+           <p>Example:</p>
+           <a href="switch.png"><img src="switch.png"></a>
+           <br><br>
+         </li>
+       </ul>
+       </div>
+       </li>
+
+       <br><br>
+       <li class="lists">
+     <div class="title" class="Loops">
+      <h3><u>Loops in Java</u></h3>
+      <div class="information">
+      <p>Loops are used to iterate the code <br> a specific number of times until the <br>specified condition is true,<br>There are three kinds of loops on Java:</p>
+      </div>
+      <table class="data-table">
+        <tr class="table-head">
+          <th>For loop</th>
+          <th></th>
+          </tr>
+          <tr>
+            <th>Iterates the code for a specific number of times until the condition is true.</th>
+          <th>class TestforLoop{<br>public static void main(String[] args){<br>for(int i=0;i<=10;i++){<br>System.out.print(i);<br>}<br>}<br>}</th>
+        </tr>
+        <tr class="table-head">
+          <th>while loop</th>
+          <th></th>
+        </tr>
+        <tr>
+          <th>If the condition in the while is true the program enters the loop for iteration.</th>
+            <th>{public static void main(String[] args){<br>int i=1;<br>while(i<=10)<br>{<br>Sytem.out.println(i);<br>i++;<br>}<br>}</th>
+        </tr>
+        <tr class="table-head">
+          <th>do-while loop</th>
+          <th></th>
+        </tr>
+        <tr>
+          <th>The program enter s the loop for iteration at least once irrespective of the while condition being true,For further iterations,it depemds o nthe while comdition to be true.</th>
+          <th>class TestDoWhile{<br>public static void main(String[] args){<br>int i=1;<br>do{<br>Sytem.out.println(i);<br>i++;<br>}while(i<=10);<br>}<br>}</th>
+        </tr>
+        </table>
+        </div>
+        </li>
+
+        <br><br>
+        <li class="lists">
+    <div class="title" class="arrays">
+     <h3><u>Arrays</u></h3>
+     <div class="information">
+     <p>Array is a group of like-type variables <br> that are referred by a common name,<br> having continuous memory. Primitive values <br> or objects can be stored in an array.<br> It provides code optimization since we can <br> sort data efficiently and also access it randomly. <br>The only flaw is that we can have a <br>fixed-size elements in an array.
+       </div>
+      <p>There are Two kinnds of arrays defined in Java:<br>
+            <ul>
+              <li>Single Dimentional:Elements are stored in a single row.<br>
+                <div class="image">
+                  <br>
+                <a href="1d.png"><img src="1d.png"></a>
+
+                </div>
+              <li>Mutli Dimentional:Elements are stored as row and column.<br>
+                <div class="image">
+                  <br>
+                  <a href="2d.png"><img src="2d.png"></a>
+                </div>
+              </li>
+            </ul>
+      </p>
+      </div>
+      </li>
+    </ol>
+</div>
+<script src="./script.js"></script>
+  </body>
+  <footer>
+    <h3><center>Happy Coding!!!<center></h3>
+  </footer>
+</html>
